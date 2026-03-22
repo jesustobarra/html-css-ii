@@ -1,14 +1,9 @@
-/**
- * Import dependencies from node_modules
- * see commented examples below
- */
+import AOS from 'aos';
 
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
-
-/**
- * Write any other JavaScript below
- */
+AOS.init({
+  duration: 800,
+  once: true
+});
 
 +(function () {
   const university = "UOC";

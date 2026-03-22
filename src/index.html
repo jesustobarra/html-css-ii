@@ -1,36 +1,114 @@
 <!doctype html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  <!-- do not remove this line! -->
+  <title>UOC Boilerplate</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+
+  <main>
+    <section class="hero">
+      <div class="hero__container" data-aos="fade-up">
+        <h1 class="hero__title">Calblanque</h1>
+        <p class="hero__subtitle">
+          Un paraíso natural en la costa de Murcia
+        </p>
+        <a href="#about" class="hero__cta">
+          <i class="fa-solid fa-compass" aria-hidden="true"></i>
+          Descubrir más
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="about" data-aos="fade-up">
+      <div class="about__container">
+        <h2 class="about__title">Sobre Calblanque</h2>
+
+        <p class="about__text">
+          El Parque Regional de Calblanque es uno de los espacios naturales más
+          impresionantes de la Región de Murcia, caracterizado por sus playas vírgenes,
+          dunas y paisajes abiertos.
+        </p>
+
+        <ul class="about__features">
+          <li>
+            <i class="fa-solid fa-umbrella-beach" aria-hidden="true"></i>
+            Playas naturales sin urbanizar
+          </li>
+          <li>
+            <i class="fa-solid fa-person-hiking" aria-hidden="true"></i>
+            Senderos y rutas panorámicas
+          </li>
+          <li>
+            <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+            Entorno protegido
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+      <div class="gallery__container">
+        <h2 class="gallery__title">
+          <i class="fa-solid fa-camera-retro" aria-hidden="true"></i>
+          Galería
+        </h2>
+
+        <div class="gallery__grid" data-aos="fade-up">
+          <img src="https://picsum.photos/400/300?1" alt="Calblanque" />
+          <img src="https://picsum.photos/400/300?2" alt="Calblanque" />
+          <img src="https://picsum.photos/400/300?3" alt="Calblanque" />
+        </div>
+      </div>
+    </section>
+
+
+    <section id="info" class="info">
+      <div class="info__container">
+        <h2 class="info__title">Información útil</h2>
+
+        <div class="info__grid">
+          <div class="info__card" data-aos="zoom-in">
+            <h3>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              Ubicación
+            </h3>
+            <p>Cartagena, Región de Murcia</p>
+          </div>
+
+          <div class="info__card" data-aos="zoom-in">
+            <h3>
+              <i class="fa-solid fa-car" aria-hidden="true"></i>
+              Acceso
+            </h3>
+            <p>En coche o autobús en verano</p>
+          </div>
+
+          <div class="info__card" data-aos="zoom-in">
+            <h3>
+              <i class="fa-solid fa-sun" aria-hidden="true"></i>
+              Consejos
+            </h3>
+            <p>Llevar agua, protector solar y respetar el entorno</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <include src="./views/footer.html"></include>
+
+  <script type="module" src="./assets/scripts/main.js"></script>
+
+</body>
+
 </html>
